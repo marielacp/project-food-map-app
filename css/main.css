@@ -1,0 +1,50 @@
+body {
+	font-family: 'Raleway', sans-serif !important;
+	color: blanck;
+}
+.logo{
+outline: 1px solid red;
+width: 200px;
+height: auto;
+}
+.grad70{
+	background: linear-gradient( rgb(15, 138, 3)35%, rgb(237, 229, 14))
+}
+.container-flex-column{
+display: flex;
+flex-direction: column;
+justify-content:center;
+padding: 2rem;
+
+}
+/*Sign-UP*/
+.vh100{
+height: 120vh;
+}
+#img{
+padding: 3rem;
+
+}
+.position-flex {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+.content:hover{
+width: 100%;	
+/*padding: 10%;*/
+background-color: rgba(13, 83, 6, 07); 
+
+-moz-transition: all 1s ease-in-out;
+-webkit-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+opacity:.3;
+filter:alpha(opacity=0);
+
+}
+
+
+/*****************************/
