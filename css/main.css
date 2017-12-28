@@ -1,6 +1,6 @@
 body {
 	font-family: 'Raleway', sans-serif !important;
-	color: blanck;
+	color:#fff;
 }
 .logo{
 outline: 1px solid red;
@@ -21,30 +21,10 @@ padding: 2rem;
 .vh100{
 height: 120vh;
 }
-#img{
-padding: 3rem;
-
-}
-.position-flex {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: 0;
-}
-
-.content:hover{
-width: 100%;	
-/*padding: 10%;*/
-background-color: rgba(13, 83, 6, 07); 
-
--moz-transition: all 1s ease-in-out;
--webkit-transition: all 1s ease-in-out;
--o-transition: all 1s ease-in-out;
-transition: all 1s ease-in-out;
-opacity:.3;
-filter:alpha(opacity=0);
-
+.images{
+padding: 2rem;
 }
 
 
 /*****************************/
+

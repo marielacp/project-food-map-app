@@ -8,80 +8,374 @@
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/galery.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
     <title>SignUp</title>
 </head>
 
-<body>
-<main class="">
-<!--<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1 class="text-center"> Food Map</h1>
-        <hr>
-          <div>
-             <img class="img-responsive map" src="../assets/img/rutas1.png" alt="">
-              </div>           
-                 <div>
-                    <select class="form-control" id="select-control">
-                    <option value="restaurante">Selecciona un restaurante</option>
-                    <option value="vegano-one"> Germinando-Vida</option>
-                    <option value="vegano-two"> Abdiel-Vegan</option>
-                    <option value="vegano-three"> La Chakra </option>
-                    <option value="vegano-four"> Vrinda Perù</option>                    
-                </select>
-            <div class="box-wrapper">
-            <img class="img-responsive" src="" alt="" id="img">            
-            <div class="content" style="display:none">
-                <div class="animated fadeInUp">
-                    <h3>Te gusta este restaurante </h3>
-                    <div>
-                        <div class="btn btn-primary pull-right animated fadeInLeft custom" id="btn-img" >Click Aqui</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                 </div>
-                
-            
-            </div>
-            
-    </div>
-</div>
--->
-
+<body class="grad70 ">
+<main class="container-flex-column">
 <section>
-  <div class="container">
-    <div class="cont-image-fondo-one">
+    <div class="container">
       <div class="row ">
-        <div class="col-xs-12">
+        <div class="col-xs-12 border">
           <h1 class="text-center"> Food Map</h1>
           <hr>
-          <img class="img-responsive map" src="../assets/img/rutas1.png" alt="">
-            <div >
-              <select class="form-control" id="select-control">
-                  <option value="restaurante">Selecciona un restaurante</option>
-                  <option value="vegano-one"> Germinando-Vida</option>
-                  <option value="vegano-two"> Abdiel-Vegan</option>
-                  <option value="vegano-three"> La Chakra </option>
-                  <option value="vegano-four"> Vrinda Perù</option>
-                </select>
+            <div>          
+              <img class="img-responsive" src="../assets/img/mapa-inicial.png" alt="">          
             </div>
-            <div>
-            <img class="img-responsive content" src="" alt="" id="img">
-        <h1 style="visibility:hidden"> Click Aquì</h1>
+            <hr>
+                <select class="form-control" id="select-control">
+                    <option value="restaurante">Selecciona un restaurante</option>
+                    <option value="vegano-one"> Germinando-Vida</option>
+                    <option value="vegano-two"> Yamil-Vegan</option>
+                    <option value="vegano-three"> Abdiel-Vegan </option>
+                    <option value="vegano-four"> Sagra Restaurate</option>
+                    <option value="vegano-five"> Sabor y vida</option>
+                </select>             
+                  <div class="featured cont-img">
+                    <div class="big">
+                      <a href="#">
+                        <span class="title lead" type="button" class="btn btn-info">Click Aqui</span>
+                        <img src="" class="img-responsive blogfing center-block" alt="" id="img">
+                      </a>
+                    </div>
+                  </div>
+         </div>
+      </div>      
+   </div>     
+</section>
+<!--Seccion galeria de imagenes restaurantes-->
+<section>
+  <div class="container">
+    <h2 class="tittle-two text-center">Enlace Directo</h2>
+     <div class="bgrid mtop32 mbottom32">
+    <!--Imagen Germinando Vida-->
+      <div class="col50">
+        <div class="featured">
+          <div class="big">
+            <a href="#ventana1" data-toggle="modal">
+              <span class="tittle lead">Germinando Vida</span>
+              <p class="desc lead" data-toggle="modal" data-target="#form-log-in"> Restaurante Vegano-Click aqui para ver direcciòn</p>
+              <img src="../assets/img/gv1/portada-gv1.jpg" class="img-responsive blogfing" alt="">
+            </a>
+              <!--Modal Germinando Vida-->
+              <div class="modal fade" id="ventana1">
+                <div class="modal-dialog">
+                  <div class="modal-content background">
+                    <!--Cabecera de la ventana-->
+                    <div class="modal-header background">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h1 class="modal-title text-center"> Germinano Vida</h1>
+                    </div>
+                    <!--Contenido de la ventana-->
+                    <div class="modal-body">
+                      <img src="../assets/img/gv1/ruta-gv.png" class="img-responsive " alt="">
+                      <div class="background">
+                        <br>
+                        <table>
+                          <tr>
+                            <td rowspan="3">
+                              <h4 class="text-center lead"> Av. Almte. Miguel Grau 209A </h4>
+                              <h5 class="text-center lead"> Lima-Barranco 15063</h5>
+                              <h5 class="text-center lead"> Phone: (01) 3000602</h5>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td rowspan="3">
+                              <img src="../assets/img/gv1/modal-gv.png" class=" img-responsive" alt="">
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+                        <select class="form-control width-select">
+                          <option value="">Horarios de atenciòn</option>
+                          <option value="">Miércoles: 10–16, 17:30–23</option>
+                          <option value="">Jueves: 10–16, 17:30–23</option>
+                          <option value="">Viérnes: 10–16, 17:30–23</option>
+                          <option value="">Sabado: 10–16, 17:30–23</option>
+                          <option value="">Domingo: 11–17</option>
+                          <option value="">Lunes: 10–16, 17:30–23</option>
+                          <option value="">Martes: 10–16, 17:30–23</option>
+                          <option value="">Feriados: Horarios variables</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--Footer de la ventana-->
+                    <div class="modal-footer background footer-center">
+                      <button type="button" class="btn btn-default " data-dismiss="modal" id="gv-close">cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fin Modal Germinando Vida-->
           </div>
-        </div>           
+        </div>
       </div>
-    </div>
-      
-  </div>      
+    <!--Fin imagen Germinando Vida-->
+    <!--Imagen Yami Vegan-->
+      <div class="col50">
+    <!--Imagen Yami Vegan-->
+          <div class="col50">
+            <div class="featured">
+             <div class="small">
+              <a href="#modalyv" data-toggle="modal">
+                <span class="tittle lead">Yami Vegan</span>
+                <p class="desc lead"> Novedades veganas.</p>
+                <img src="../assets/img/yv2/portada-yv1.jpg" class="img-responsive blogfing" alt="">
+              </a>
+                <!--Modal Yami Vegan-->
+                <div class="modal fade" id="modalyv">
+                  <div class="modal-dialog">
+                    <div class="modal-content background">
+                      <!--Cabecera de la ventana-->
+                      <div class="modal-header background">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h1 class="modal-title text-center"> Yamil Vegan</h1>
+                      </div>
+                      <!--Contenido de la ventana-->
+                      <div class="modal-body">
+                        <img src="../assets/img/yv2/ruta-yv.png" class="img-responsive" alt="">
+                        <div class="background">
+                          <br>
+                          <table>
+                            <tr>
+                              <td rowspan="3">
+                                <h4 class="text-center"> Jirón Domingo Casanova 254  </h4>
+                                <h5 class="text-center"> Lince LIMA 14</h5>
+                                <h5 class="text-center"> Phone: (01) 2216939</h5>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">
+                                <img src="../assets/img/yv2/modal-yv.png" class=" img-responsive img-width" alt="">
+                              </td>
+                            </tr>
+                          </table>
+                          <br>
+                          <select class="form-control width-select">
+                            <option value="">Horarios de atenciòn</option>
+                            <option value="">Miércoles: 12:00–09:00 </option>
+                            <option value="">Jueves: 12:00–09:00</option>
+                            <option value="">Viérnes: 12:00–09:00</option>
+                            <option value="">Sabado: 12:00–09:00</option>
+                            <option value="">Domingo: 12:00–09:00</option>
+                            <option value="">Lunes: 12:00–09:00</option>
+                            <option value="">Martes: 12:00–09:00</option>
+                            <option value="">Feriados: Horarios variables</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--Footer de la ventana-->
+                      <div class="modal-footer background footer-center">
+                        <button type="button" class="btn btn-default " data-dismiss="modal" id="gv-close">cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Fin Modal Yami Vegan-->
+              </div>
+            </div>
+          </div>
+    <!--Fin imagen Yami Vegan-->
+    <!--Imagen Abdiel Vegan-->
+        <div class="col50">
+          <div class="featured">
+            <div class="small">
+              <a href="#modalav" data-toggle="modal">
+                <span class="tittle lead">Abdiel Vegan</span>
+                <p class="desc lead"> Comida Vegetariana.</p>
+                <img src="../assets/img/av3/portada-av1.jpg" class="img-responsive blogfing" alt="">
+              </a>
+              <!--Modal Abdiel Vegan-->
+              <div class="modal fade" id="modalav"> 
+                <div class="modal-dialog">
+                  <div class="modal-content background">
+                    <!--Cabecera de la ventana-->
+                    <div class="modal-header background">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h1 class="modal-title text-center"> Abdiel Vegan</h1>
+                    </div>
+                    <!--Contenido de la ventana-->
+                    <div class="modal-body">
+                      <img src="../assets/img/av3/ruta-av.png" class="img-responsive" alt="">
+                      <div class="background">
+                        <br>
+                        <table>
+                          <tr>
+                            <td rowspan="3">
+                              <h4 class="text-center"> Teodoro Cárdenas 281 </h4>
+                              <h5 class="text-center"> Cercado de Lima 15046</h5>
+                              <h5 class="text-center"> Phone: 986 320 870</h5>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td rowspan="3">
+                              <img src="../assets/img/yv2/modal-yv.png" class=" img-responsive img-width" alt="">
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+                        <select class="form-control width-select">
+                          <option value="">Horarios de atenciòn</option>
+                          <option value="">Miércoles: 07:00–09:40 </option>
+                          <option value="">Jueves: 07:00–09:40</option>
+                          <option value="">Viérnes: 07:00–09:40</option>
+                          <option value="">Sabado: 07:00–09:40</option>
+                          <option value="">Domingo:09:00–05:00</option>
+                          <option value="">Lunes: 07:00–09:40</option>
+                          <option value="">Martes: 07:00–09:40</option>
+                          <option value="">Feriados: Horarios variables</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--Footer de la ventana-->
+                    <div class="modal-footer background footer-center">
+                      <button type="button" class="btn btn-default " data-dismiss="modal" id="gv-close">cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fin Modal Abdiel Vegan-->
+            </div>
+          </div>
+        </div>
+    <!--Fin imagen Abdiel Vegan-->              
+    <!--Imagen Sagra Restaurant-->
+        <div class="col50">
+          <div class="featured">
+            <div class="small">
+              <a href="#modalsr" data-toggle="modal">
+                <span class="tittle lead">Sagra Restaurant</span>
+                <p class="desc lead"> Come sano come vegano</p>
+                <img src="../assets/img/sr4/portada-sr.png" class="img-responsive blogfing" alt="">
+              </a>
+            <!--Modal Sagra Restaurant-->
+            <div class="modal fade" id="modalsr">
+              <div class="modal-dialog">
+                <div class="modal-content background">
+                  <!--Cabecera de la ventana-->
+                  <div class="modal-header background">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h1 class="modal-title text-center">Sagra Restaurant</h1>
+                  </div>
+                  <!--Contenido de la ventana-->
+                  <div class="modal-body">
+                    <img src="../assets/img/sr4/ruta-sr.png" class="img-responsive" alt="">
+                    <div class="background">
+                      <br>
+                      <table>
+                        <tr>
+                          <td rowspan="3">
+                            <h4 class="text-center"> Av. la Paz 646  </h4>
+                            <h5 class="text-center"> Miraflores Lima 18</h5>
+                            <h5 class="text-center"> Phone:  (01) 6508884</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">
+                            <img src="../assets/img/yv2/modal-yv.png" class=" img-responsive img-width" alt="">
+                          </td>
+                        </tr>
+                      </table>
+                      <br>
+                      <select class="form-control width-select">
+                        <option value="">Horarios de atenciòn</option>
+                        <option value="">Miércoles: 12:00–23:00 </option>
+                        <option value="">Jueves: 12:00–23:00</option>
+                        <option value="">Viérnes: 12:00–23:00</option>
+                        <option value="">Sabado: 12:00–23:00</option>
+                        <option value="">Domingo: Cerrado </option>
+                        <option value="">Lunes: 12:00–23:00</option>
+                        <option value="">Martes: 12:00–23:00</option>
+                        <option value="">Feriados: Horarios variables</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--Footer de la ventana-->
+                  <div class="modal-footer background footer-center">
+                    <button type="button" class="btn btn-default " data-dismiss="modal" id="gv-close">cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin Modal Sagra Restaurant-->
+          </div>
+        </div>
+      </div>
+    <!--Fin imagen Sagra Restaurant-->
+    <!--Imagen Sabor y vida-->
+        <div class="col50">
+          <div class="featured">
+            <div class="small">
+              <a href="#modalsv" data-toggle="modal">
+                <span class="tittle lead">Sabor y vida</span>
+                <p class="desc lead"> Restaurante Vegetariano.</p>
+                <img src="../assets/img/sv5/portada.png" class="img-responsive blogfing" alt="">
+              </a>
+              <!--Modal Sabor y vida-->
+              <div class="modal fade" id="modalsv">
+                <div class="modal-dialog">
+                  <div class="modal-content background">
+                    <!--Cabecera de la ventana-->
+                    <div class="modal-header background">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h1 class="modal-title text-center">Sabor y vida</h1>
+                    </div>
+                    <!--Contenido de la ventana-->
+                    <div class="modal-body">
+                      <img src="../assets/img/sv5/ruta-sv.png" class="img-responsive" alt="">
+                      <div class="background">
+                        <br>
+                        <table>
+                          <tr>
+                            <td rowspan="3">
+                              <h4 class="text-center"> Calle Gral Recavarren 156</h4>
+                              <h5 class="text-center"> Miraflores Lima 18</h5>
+                              <h5 class="text-center"> Phone: (01) 4451447</h5>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td rowspan="3">
+                              <img src="../assets/img/sv5/modal-sv.png" class=" img-responsive img-width" alt="">
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+                        <select class="form-control width-select">
+                          <option value="">Horarios de atenciòn</option>
+                          <option value="">Miércoles: 10:00–17:00 </option>
+                          <option value="">Jueves: 10:00–17:00</option>
+                          <option value="">Viérnes: 10:00–17:00</option>
+                          <option value="">Sabado: 12:00–16:00</option>
+                          <option value="">Domingo:12:00–16:00 </option>
+                          <option value="">Lunes: 10:00–17:00</option>
+                          <option value="">Martes: 10:00–17:00</option>
+                          <option value="">Feriados: Horarios variables</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--Footer de la ventana-->
+                    <div class="modal-footer background footer-center">
+                      <button type="button" class="btn btn-default " data-dismiss="modal" id="gv-close">cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--Fin Modal Sabor y vida-->
+          </div>
+        </div>
+      </div>
+    <!--Fin Sabor y vida-->
+            </div>
+          </div>
+        </div>    
 </section>
 </main>
-
-
-    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script src="../js/select-eat.js"></script>
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+  <script src="../js/select-eat.js"></script>
 </body>
-
 </html>

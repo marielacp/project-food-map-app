@@ -1,90 +1,55 @@
 $(document).ready(function(){
-var rutaLocal = '../assets/img/';
-var arrImagenes = [
-    { url: 'a-germinando-vida-1.jpg' },
-    { url: 'b-abdiel-vegan-1.jpg' },
-    { url: 'c-la-chacra-01.jpg' },
-    { url: 'd-vrinda-peru-1.jpg' },
-    ];
-    var index = 0;
-    var $mous = $('#btn-img');
-    var $map = $('.map');
-    var $img = $('#img');    
-    var $select = $('#select-control');   
-   var $prueba = $('#prueba')
-  /*var $arrSelect = $.makeArray($select)
-  console.log($.isArray($arrSelect)); 
-  $.each($arrSelect, function (i, val) {
-    $select.eq(i).on('click', function () {
-      $img.attr('src', rutaLocal + arrImagenes[i].url);
-    })
-  });*/
-
-/*$('.box-wrapper').mouseover(function () {
-  $(this).find('.content').addClass('animate zoomIn').show();
-}).mouseleave(function(){
-$(this).find('.content').fadeOut();
-});*/
-
-
-
-
-
-
-  /*  $img.on('click',function(){
-    if($img.attr('src', rutaLocal + arrImagenes[0].url)){
-
-      window.location.href = 'register.html';
-    }
-    else if ($img.attr('src', rutaLocal + arrImagenes[1].url)){
-      window.location.href = 'register.html';
-    }
-    else if ($img.attr('src', rutaLocal + arrImagenes[2].url)) {
-      window.location.href = 'register.html';
-    }
-    else if ($img.attr('src', rutaLocal + arrImagenes[3].url)) {
-      window.location.href = 'register.html';
-    }
-    })*/
-
-    $select.change(function () {  
-      $('#img').mouseover(function () {
-        $(this).animate({
-          opacity: 0.7,
-          fontSize: "6em",
-        }, 2000);
-      });
-
-      $('#img').mouseout(function () {
-        $(this).animate({
-          opacity: 1,
-
-        });
-      });
-       
-      if ($select.val() == "vegano-one") {     
-       $img.attr('src', rutaLocal + arrImagenes[0].url)     
-                
-       }
+  var rutaLocal = '../assets/img/';
+  var arrImagenes = [
+    { url: 'gv.jpg' },
+    { url: 'yv.jpg' },
+    { url: 'av.jpg' },
+    { url: 'sr.png' },
+    { url: 'sv.png' },
+  ];
+  var index = 0;
+  var $img = $('#img');    
+  var $select = $('#select-control');     
+  var $featured = $('.cont-img');
+  /* Agregando eventos mouseover y recorriendo el select */
+  $select.change (function () {  
+    $('.featured').mouseover(function () {
+      $(this).find('.title').fadeIn()
+      $(this).find('.title').animate({ 'top': '0' })
+      $(this).find('.title').animate({ 'left': '70%' })
+      }).mouseout(function () {
+      $(this).find('.title').fadeOut();
+      });       
+        if ($select.val() == "vegano-one") {     
+          $img.attr('src', rutaLocal + arrImagenes[0].url)
+          window.location.href = 'colecction-germinando-vida.html';  
+          }
       else if ($select.val() == "vegano-two") {      
           $img.attr('src', rutaLocal + arrImagenes[1].url)
+        window.location.href = 'colecction-yami-vegetal.html';
        }
       else if ($select.val() == "vegano-three") {
-                $img.attr('src', rutaLocal + arrImagenes[2].url)
+        $img.attr('src', rutaLocal + arrImagenes[2].url)
+        window.location.href = 'colecction-abdiel-vegetal.html';
               }     
       else if ($select.val() == "vegano-four") {
-                       $img.attr('src', rutaLocal + arrImagenes[3].url)
-                    }
-        
+          $img.attr('src', rutaLocal + arrImagenes[3].url)
+        window.location.href = 'colecction-sagra-restaurant.html';
+                    } 
+      else if ($select.val() == "vegano-five") {
+        $img.attr('src', rutaLocal + arrImagenes[4].url)
+        window.location.href = 'colecction-sabor-vida.html';
+      }               
 });
-
-
-/*$select.change(function () {
-
-       if ($select.val()) {
-         
-         $img.attr('src', rutaLocal + arrImagenes(i).url)
-       }
-
-});*/
+//Agregando efecto a daleria de imagenes
+  $('.featured').hover(function () {
+    hdesc = $(this).find('.desc').height() + 28;
+    $(this).find('.tittle').animate({ 'bottom': hdesc })
+    $(this).find('.desc').fadeIn()
+    $(this).find('.tittle').css({ 'padding-bottom': '0' })
+  }, function () {
+    $(this).find('.tittle').css({ 'padding-bottom': '16px' })
+    $(this).find('.tittle').animate({ 'bottom': '0' })
+    $(this).find('.desc').fadeOut()
+  });
 });

@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+	overflow: hidden;
+}
+.col50{
+  float: left;
+  width: 50%;
+  }
+.featured{
+  background-color:#000;
+  overflow: hidden;
+  position: relative;
+}
+.small a{
+  font-size: 1.4em;
+
+}
+.small .desc{
+	font-size: 0.7em;
+}
+.featured a{
+	color: white;
+	font-size: 2em;
+	opacity: 1 !important;
+	overflow: hidden;
+	text-shadow: 0 1px 5px rgba(0,0,0,.75)
+}
+
+.featured a .tittle{
+	bottom: 0px;
+	position: absolute;
+	opacity: 1 !important;
+	padding: 16px;
+	z-index: 999;
+}
+.featured a .title {	  
+	bottom: 0px;
+	position: absolute;
+	opacity: 1 !important;
+	padding: 16px;	
+  z-index: 999;
+  display: none;
+}
+.desc{
+	display: none;
+	bottom: 0px;
+	position: absolute;
+	font-size: 0.5em;
+	padding: 16px;
+	z-index: 999;
+}
+.blogfing{
+	width: 100%;
+	opacity: 0.85;
+	position: relative;
+	-webkit-transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.blogfing:hover{
+	opacity:0.3;
+}
+
+.tittle-two {
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
