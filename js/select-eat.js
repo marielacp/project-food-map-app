@@ -41,7 +41,7 @@ $(document).ready(function(){
         window.location.href = 'colecction-sabor-vida.html';
       }               
 });
-//Agregando efecto a daleria de imagenes
+//Agregando efecto a galeria de imagenes
   $('.featured').hover(function () {
     hdesc = $(this).find('.desc').height() + 28;
     $(this).find('.tittle').animate({ 'bottom': hdesc })
