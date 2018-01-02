@@ -1,5 +1,5 @@
 ---
-Title: "Reto Proyecto Lyft-App "
+Title: "Reto Proyecto  "
 Name: "Mariela Deysi Cerna Peralta"
 Fech: "01/01/2018"
 
@@ -11,7 +11,7 @@ Fech: "01/01/2018"
 * **Unidad:** _Agiliza tu desarrollo_
 
 ***
-# Crear una replica de pagina web LabCar.
+# Crear una replica de pagina web Map.
 Creando pàgina Responsive para mobile se utiliza guia adicional de Framewoks-Bootstrap.
 
 ## Desarrollo
