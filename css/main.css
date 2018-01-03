@@ -28,3 +28,17 @@ padding: 2rem;
 
 /*****************************/
 
+.container-search img {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	height: 30%;
+	text-align: center;
+	height: auto;
+	left: 30%;
+}
+
+.text {
+	color: black;
+	width: 100%;
+}
