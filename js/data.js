@@ -7,6 +7,7 @@ var data = [
     horarios: 'L-S 10:00 a 16:00, D 09:00 - 12:00',
     tags: 'vegano',
     img: '../assets/img/gv.jpg',
+    ruta:'../assets/img/gv1/ruta-gv.png',
     platos: [
       {
         'nombrePlato': 'tacutacu',

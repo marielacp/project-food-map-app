@@ -46,11 +46,11 @@ $(window).on('load', function () {
     var element = data[parseInt($(this).data('pos'))];
 
     $modal.find('#exampleModalLongTitle').text(element.nombre);
-    $modal.find('h3').text($(this).attr('alt'));
+    $modal.find('img').attr('src', element.ruta);
 
     var $address = $modal.find('.detail-js').children().eq(0).children().first();
+    var $other = $modal.find('.detail-js').children('img').eq(0).children().last();
     var $other = $modal.find('.detail-js').children().eq(0).children().last();
-
     $address.text(element.direccion);
     $other.text((element.telefono) + ' Horarios :' + (element.horarios));
 
