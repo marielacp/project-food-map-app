@@ -49,10 +49,12 @@ $(window).on('load', function () {
     $modal.find('img').attr('src', element.ruta);
 
     var $address = $modal.find('.detail-js').children().eq(0).children().first();
-    var $other = $modal.find('.detail-js').children('img').eq(0).children().last();
-    var $other = $modal.find('.detail-js').children().eq(0).children().last();
+    var $other = $modal.find('.detail-js').children().eq('col-xs-4').children();
+    var $end = $modal.find('.detail-js').children().eq(0).children().last();
+
     $address.text(element.direccion);
     $other.text((element.telefono) + ' Horarios :' + (element.horarios));
+    $end.attr('src', element.ruta);
 
     $modal.modal('show');
   }
