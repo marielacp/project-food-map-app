@@ -24,23 +24,23 @@ function begin() {
 
 $(document).ready(begin);
 
-$(window).on('load', function () {
+$(window).on('load', function() {
   $('input').prop('disabled', false);
 
   // algún efecto con mouseover
-  $('.container-search img').on('mouseover', function () {
+  $('.container-search img').on('mouseover', function() {
     $(this).fadeOut().fadeIn();
   });
 
   // despliegue del modal
- // $('.container-search img').on('click', modalDetail);
- $('.container-search img').on('click', pag);
+  // $('.container-search img').on('click', modalDetail);
+
+  $('.container-search img').on('click', pag);
   // filtro de restaurantes
 
-
-function pag(){
-  window.location.href = 'coleccion.html'; 
-}
+  function pag() {
+    window.location.href = 'coleccion.html'; 
+  }
 
   $('#search').on('keyup', search);
 
@@ -66,16 +66,13 @@ function pag(){
   // filtramos la selección
   function search() {
     if ($(this).val()) {
-      $('.container-search img').each(function (index) {
+      $('.container-search img').each(function(index) {
         if (!data[index].tags.match($('input').val())) {
           $(this).hide();
         }
       });
     } else {
       $('.container-search img').show();
-
     }
   }
-
-
 });

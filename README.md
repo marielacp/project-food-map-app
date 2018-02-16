@@ -11,13 +11,28 @@ Fech: "01/01/2018"
 * **Unidad:** _Agiliza tu desarrollo_
 
 ***
-# Crear una replica de pagina web Map.
-Creando pàgina Responsive para mobile se utiliza guia adicional de Framewoks-Bootstrap.
+# Pagina Responsive-FOOD MAP.
+
+## COME SANO COME VEGANO.
+
+![Imágenes](assets/img/logo.png) 
+
+# OBJETIVO.
+
+Crear una pàgina Responsive Informativa, de restaurantes Veganos y vegetarianos, su ubicaciòn Lima Metropolitana.
+
+## Tècnologia utilizada:
+
+* - BOOTSTRAP.
+* - CSS3.
+* - HTML5.
+* - JQUERY.
 
 ## Desarrollo
 1. Se crea la estructura de la página.
-2. Se aplica estilos uso de Bootstrap.
-3. Se utiliza Javascrip con libreria Jquery para darle funcionalidad.
-4. Se crea conexion de paginas.
+2. Definicion de colores.
+3. Maquetaciòn.
+4. Funcionalidad.
 5. Configuracion de GitHubs.
-6. Creaciòn repositorio remoto y Pagina Web-Responsive-Mobile.
+6. Creaciòn repositorio remoto.
+7. Pagina gh-pages.

@@ -1,29 +1,36 @@
 body {
 	font-family: 'Raleway', sans-serif !important;
-	color:#fff;
+  color:#fff;
 }
+
 .logo{
-width: 200px;
-height: auto;
+  /*outline: 1px solid red;*/
+  width: 60%;
+  height: auto;
 }
+
 .grad70{
 	background: linear-gradient( rgb(15, 138, 3)35%, rgb(237, 229, 14))
 }
-.container-flex-column{
-display: flex;
-flex-direction: column;
-justify-content:center;
-padding: 2rem;
 
+.container-flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding: 2rem;
 }
-/*Sign-UP*/
+
+.vh {
+  height: 100vh;
+}
+
 .vh100{
 height: 120vh;
 }
+
 .images{
 padding: 2rem;
 }
-
 
 /*****************************/
 
@@ -44,4 +51,14 @@ padding: 2rem;
 
 [alt="google maps restaurantes"] {
 	width: 49%;
+}
+
+@media only screen 
+and (min-device-width: 250px) 
+and (max-device-width: 767px) {
+  h2 {
+   font-size: 1.7rem;
+   font-weight: bold;
+   color: #f5d207;
+  }
 }
