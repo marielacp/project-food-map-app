@@ -9,7 +9,6 @@ function begin() {
       '<img class="img-fluid" src="__img__" alt="__alt__" data-pos="__pos__">' +
       '</figure>';
 
-
     $container.html('');
     for (var i = 0; i < data.length; i++) {
       str += template
@@ -17,7 +16,6 @@ function begin() {
         .replace('__alt__', data[i].visit)
         .replace('__pos__', i);
     }
-
     $container.html(str);
   }
   // llamada de la funcion para mostrar las imagenes
@@ -35,9 +33,15 @@ $(window).on('load', function () {
   });
 
   // despliegue del modal
-  $('.container-search img').on('click', modalDetail);
-
+ // $('.container-search img').on('click', modalDetail);
+ $('.container-search img').on('click', pag);
   // filtro de restaurantes
+
+
+function pag(){
+  window.location.href = 'coleccion.html'; 
+}
+
   $('#search').on('keyup', search);
 
   // Buscando Modales.
