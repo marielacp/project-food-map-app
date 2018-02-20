@@ -1,23 +1,15 @@
----
-Title: "Reto Proyecto  "
-Name: "Mariela Deysi Cerna Peralta"
-Fech: "01/01/2018"
 
----
-# Retos de codigo
+# FOOD MAP.
 
-* **Track:** _Common Core_
-* **Curso:** _Crea tu propia red Social_
-* **Unidad:** _Agiliza tu desarrollo_
+FoodMap, es una página web responsive, te ayudara a buscar restaurantes veganos y vegetarianos, cercanos.
+**Nuestro Lema: "Come Sano come vegano".**
 
-***
-# Pagina Responsive-FOOD MAP.
+![image](https://user-images.githubusercontent.com/32305619/36450049-bcded372-165a-11e8-96a3-387f09524c2c.png)
 
-## COME SANO COME VEGANO.
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
 
-![Imágenes](assets/img/logo.png) 
-
-# OBJETIVO.
+## OBJETIVO.
 
 Crear una pàgina Responsive Informativa, de restaurantes Veganos y vegetarianos, su ubicaciòn Lima Metropolitana.
 
